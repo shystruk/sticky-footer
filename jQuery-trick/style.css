@@ -1,0 +1,32 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+#wrapper {
+    position: relative;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 10px 0;
+}
+.footer-sticky {
+    position: absolute;
+    bottom: 0;
+}
+.footer-static {
+    position: static;
+}
+
+/* Links */
+ul {
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
