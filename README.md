@@ -112,10 +112,20 @@ $(function() {
 
     //Now we check document height and window height
     if (($(document.body).height() + footerHeight) < $(window).height()) {
-        footer.addClass('footer-sticky');
+        footer.addClass('footer-sticky'); //If window height more than document height we add class
     } else {
-        footer.addClass('footer-static');
+        footer.addClass('footer-static'); //If window height less than document height we add class
     }
 });
 ```
+
+Information
+============
+If you have some question, problem or improvement for this tricks create issue and we will discuss.<br/>
+Thank you!
+
+License
+========
+[MIT License](http://opensource.org/licenses/mit-license.php)
+
 
