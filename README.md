@@ -64,5 +64,58 @@ html,body {
 
 
 ###jQuery trick
+If we want to use jQuery we include ***library jQuery*** [Donwload jQuery](http://jquery.com/download/) and file ***main.js***.
+```html
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+```
 
+Our ***html*** file look little bit different like file for ***CSS trick***:
+```html
+<div id="wrapper">
+
+    <div class="header">...</div>
+    
+    <div class="container">...</div>
+    
+</div>
+
+<div id="js-footer" class="footer">
+    ...
+</div>
+```
+
+Adding ***css style*** for our blocks:
+```css
+#wrapper {
+    position: relative;
+}
+.footer {
+    width: 100%;
+    padding: 10px 0;
+}
+.footer-sticky {
+    position: absolute;
+    bottom: 0;
+}
+.footer-static {
+    position: static;
+}
+```
+
+And last step is write jQuery code for ***footer***:
+```javascript
+$(function() {
+    //Variables
+    var footer = $('#js-footer'),
+        footerHeight = footer.innerHeight();
+
+    //Now we check document height and window height
+    if (($(document.body).height() + footerHeight) < $(window).height()) {
+        footer.addClass('footer-sticky');
+    } else {
+        footer.addClass('footer-static');
+    }
+});
+```
 
