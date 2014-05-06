@@ -1,6 +1,6 @@
 Sticky-footer-CSS-and-jQuery
 ============================
-**Sticky Footer** is very specify and have a lot tricks. But, only two tricks is correct and work in different situation.<br/>
+**Sticky Footer** is very specify and has a lot tricks. But, only two tricks is correct and work in different situation.<br/>
 First, you must think and choose which trick you will use:
 - if footer doesn't be responsive - use *CSS trick*;
 - if footer doesn't change height - use *CSS trick*;
@@ -17,7 +17,7 @@ You ask me:<br/>
 
 
 If you choose what trick use, you can start to create or edit **html** file.<br/>
-***HTML*** structure must be:
+**HTML** structure must be:
 ```html
 <div id="wrapper">
 
