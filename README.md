@@ -121,7 +121,7 @@ $(function() {
 
 Information
 ============
-If you have some question, problem or improvement for this tricks create issue and we will discuss.<br/>
+If you have some questions, problems or improvement for this tricks create issue and we will discuss.<br/>
 Thank you!
 
 License
